@@ -1,5 +1,3 @@
-import "./styles.css";
-
 export default function App() {
   return (
     <div className="App">
@@ -46,7 +44,7 @@ function FlashCards() {
   return (
     <div>
       {questions.map((question) => (
-        <div>
+        <div key={question.id}>
           <p>{question.question}</p>
         </div>
       ))}
