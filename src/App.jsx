@@ -46,7 +46,7 @@ function FlashCards() {
   const [selectedId, setSelectedId] = useState(null);
 
   function handleOpen(id) {
-    setSelectedId(id);
+    setSelectedId(id !== selectedId ? id : null);
   }
   /* function handleClose() {
     setSelectedId();
